@@ -1,0 +1,14 @@
+<!-- templates/home/booking_success.html -->
+{% extends "home/base.html" %}
+
+{% block title %}Booking Successful - Hotel Django{% endblock title %}
+
+{% block body %}
+<div class="container mt-5">
+  <h1 class="text-center">Booking Successful!</h1>
+  <p class="text-center">Thank you for your booking. We will contact you shortly.</p>
+  <div class="text-center">
+    <a href="{% url 'index' %}" class="btn btn-primary">Return to Home</a>
+  </div>
+</div>
+{% endblock body %}
